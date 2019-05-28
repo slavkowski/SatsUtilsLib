@@ -1,6 +1,7 @@
-import Exceptions.WrongLengthException;
+import exceptions.WrongLengthException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import validators.NipNumberValidator;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 

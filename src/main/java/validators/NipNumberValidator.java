@@ -1,4 +1,6 @@
-import Exceptions.WrongLengthException;
+package validators;
+
+import exceptions.WrongLengthException;
 
 public class NipNumberValidator {
     private String nip;
@@ -12,7 +14,7 @@ public class NipNumberValidator {
         return nip;
     }
 
-    public boolean isNipValid() throws WrongLengthException, NumberFormatException {
+    public boolean isNipValid() throws WrongLengthException{
         if (nip.length() != 10) throw new WrongLengthException("Nip number should consist of 10 characters");
         int sum = 0;
         for (int i = 0; i < nip.length() - 1; i++) {
